@@ -4,8 +4,8 @@ function Task({ text, category, handleDelete }) {
 
   return (
     <div className="task">
-      <div className="label">CATEGORY HERE</div>
-      <div className="text">TEXT HERE</div>
+      <div className="label">{category}</div>
+      <div className="text">{text}</div>
       <button onClick={() => handleDelete({ text })} className="delete">X</button>
     </div>
   );
